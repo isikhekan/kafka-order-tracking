@@ -1,18 +1,19 @@
 package com.example.kafkaOrderTracking.entity;
 
 import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
 import lombok.Data;
 
 @Data
 public class UserOrder {
     @NotBlank
     private String customerId;
-    @NotBlank
-    private String lat;
-    @NotBlank
-    private String lon;
-    @NotBlank
-    private String destinationLat;
-    @NotBlank
-    private String destinationLon;
+    @NotNull
+    private double lat;
+    @NotNull
+    private double lon;
+    @NotNull
+    private double destinationLat;
+    @NotNull
+    private double destinationLon;
 }
