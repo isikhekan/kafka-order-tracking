@@ -12,10 +12,10 @@ import java.time.Instant;
 public class Order {
     private String orderId;
     private String userId;
-    private String lat;
-    private String lon;
-    private String destinationLat;
-    private String destinationLon;
+    private double lat;
+    private double lon;
+    private double destinationLat;
+    private double destinationLon;
     private Instant createdAt;
 }
 
