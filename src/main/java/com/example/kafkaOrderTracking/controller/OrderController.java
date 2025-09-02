@@ -35,7 +35,7 @@ public class OrderController {
                 Instant.now()
         );
         kafka.send("orders.created",orderId,order);
-        return ResponseEntity.ok().body(Map.of("orderId", orderId));
+        return ResponseEntity.ok().body(Map.of("Order Successfully created, orderId", orderId));
 
 
     }
