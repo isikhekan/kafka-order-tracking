@@ -34,7 +34,7 @@ public class OrderController {
                 userOrder.getDestinationLon(),
                 Instant.now()
         );
-        kafka.send("order.created",orderId,order);
+        kafka.send("orders.created",orderId,order);
         return ResponseEntity.ok().body(Map.of("orderId", orderId));
 
 
