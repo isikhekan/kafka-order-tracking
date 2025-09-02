@@ -12,9 +12,9 @@ import java.time.Instant;
 public class AssignedTruck {
     private String truckId;
     private String orderId;
-    private String originLat;
-    private String originLon;
-    private String destinationLat;
-    private String destinationLon;
+    private double originLat;
+    private double originLon;
+    private double destinationLat;
+    private double destinationLon;
     private Instant assignedAt;
 }
